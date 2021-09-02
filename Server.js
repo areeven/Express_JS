@@ -28,9 +28,22 @@ let user_database = [
     }
 ]
 
+// Skapa variabel med tom sträng och return efter loop.
+function returnUserNames() {
+    let text = ''
+    user_database.forEach(item => {
+        text += item.name + ', '
+    });
+
+    return text
+}
 
 app.get('/', function (req, res) {
     res.send('API is alive!')
+})
+
+app.get('/users', (req, res) => {
+    res.send(`Available users: ${returnUserNames()}!`)
 })
 
 app.listen(port, () => {
