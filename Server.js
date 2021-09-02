@@ -34,7 +34,6 @@ function returnUserNames() {
     user_database.forEach(item => {
         text += item.name + ', '
     });
-
     return text
 }
 
@@ -43,9 +42,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/users', (req, res) => {
-    res.send(`Available users: ${returnUserNames()}!`)
+    let returnText = returnUserNames()
+    res.send(`Available users: ${returnText}!`)
 })
 
 app.listen(port, () => {
     console.log(`Server is up and running on port ${port}`)
 })
+
