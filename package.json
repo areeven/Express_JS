@@ -1,0 +1,29 @@
+{
+  "name": "Emilies API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areeven/webbserver0902.git"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/areeven/webbserver0902/issues"
+  },
+  "homepage": "https://github.com/areeven/webbserver0902#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
